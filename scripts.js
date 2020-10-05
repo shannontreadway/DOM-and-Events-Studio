@@ -27,6 +27,16 @@ function init() {
         shuttleBackground.style.backgroundColor = "green";
         spaceShuttleHeight.innerHTML = "0";
     });
+
+    missionAbort.addEventListener("click", function(event){
+        let confirmation = window.confirm("Confirm that you want to abort the mission.")
+        if (confirmation) {
+            flightStatus.innerHTML = "Mission aborted.";
+            shuttleBackground.style.backgroundColor = "green";
+            spaceShuttleHeight.innerHTML = "0";
+        };
+    });
+    
 }
 
 
