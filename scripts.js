@@ -53,7 +53,11 @@ function init() {
     });
 
     down.addEventListener("click", function(event){
-
+        shuttleButtonHeight -= 10000;
+        spaceShuttleHeight.innerHTML = shuttleButtonHeight;
+        offsetUp += 10;
+        rocket.style.position = 'relative';
+        rocket.style.top = (offsetUp)+'px';
     });
 
     left.addEventListener("click", function(event){
