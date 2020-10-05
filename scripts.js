@@ -61,7 +61,9 @@ function init() {
     });
 
     left.addEventListener("click", function(event){
-
+        offsetLeft -= 10;
+        rocket.style.position = 'relative';
+        rocket.style.left = (offsetLeft)+'px';
     });
 
     right.addEventListener("click", function(event){
